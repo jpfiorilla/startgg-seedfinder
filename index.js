@@ -50,7 +50,7 @@ const getSeeds = async ({ phaseId }) => {
         `${seedNum}: ${entrant.participants[0].gamerTag}`
     );
 
-  fs.writeFile("test.txt", seeds.join("\n"), function (err) {
+  fs.writeFile("seeds.txt", seeds.join("\n"), function (err) {
     if (err) {
       return console.log(err);
     }
