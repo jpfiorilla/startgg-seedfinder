@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start-watch": "nodemon index.js"
+  }
+}
