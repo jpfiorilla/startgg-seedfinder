@@ -36,7 +36,7 @@ const query = gql`
   }
 `;
 
-const getSeeds = async ({ phaseId }) => {
+const getSeeds = async (phaseId) => {
   const data = await graphQLClient.request(query, {
     phaseId,
     page: 1,
@@ -58,4 +58,6 @@ const getSeeds = async ({ phaseId }) => {
   });
 };
 
-getSeeds({ phaseId: 1215668 });
+const phaseId = process.argv[2];
+
+getSeeds(Number(phaseId));
