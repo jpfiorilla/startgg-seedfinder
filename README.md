@@ -8,7 +8,7 @@
     - To get your tournament event's `phaseId`, navigate to a bracket page and observe its URL.
     - The `phaseId` will be encoded in the URL as such: `start.gg/tournament/[tournamentName]/event/[eventName]/brackets/[phaseId]/[poolId]`
     - For example, in the URL `https://www.start.gg/tournament/the-function-3-brooklan/event/melee-singles/brackets/1467733/2229338`, the `phaseId` is `1467733`.
-5. Your seeding will be saved to `./seeds.txt`.
+5. Your seeding will be saved to `./seeds.txt`. From here, I like to simply `open seeds.txt`.
 
 ## Caveats
 
