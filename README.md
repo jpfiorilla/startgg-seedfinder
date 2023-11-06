@@ -12,4 +12,9 @@
 
 ## Caveats
 
-Currently does not support brackets >= 500 entrants.
+Currently does not support brackets >= 500 entrants in the most user-friendly way.
+
+You can run the program multiple times with the optional `page` argument to chain together multiple requests for 499 entrants each; e.g.
+- `yarn start [phaseId] 1`
+- `yarn start [phaseId] 2`
+- ...
