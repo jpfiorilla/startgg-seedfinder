@@ -37,6 +37,8 @@ const query = gql`
 `;
 
 const getSeeds = async ({ page, phaseId }) => {
+  if (!TOKEN) throw "No start.gg token in .env.";
+
   const data = await graphQLClient.request(query, {
     phaseId,
     page,
