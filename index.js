@@ -42,7 +42,7 @@ const getSeeds = async ({ page, phaseId }) => {
   const data = await graphQLClient.request(query, {
     phaseId,
     page,
-    perPage: 498 + 1,
+    perPage: 499,
   });
 
   const seeds = data?.phase.seeds.nodes
