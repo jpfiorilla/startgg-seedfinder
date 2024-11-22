@@ -49,7 +49,7 @@ const getSeeds = async ({ page, phaseId }) => {
     .sort((a, b) => a.seedNum - b.seedNum)
     .map(
       ({ entrant, seedNum }) =>
-        `${seedNum}: ${entrant.participants[0].gamerTag}`
+        `${seedNum}: ${entrant?.participants[0].gamerTag}`
     );
 
   fs.writeFile("seeds.txt", seeds.join("\n"), function (err) {
